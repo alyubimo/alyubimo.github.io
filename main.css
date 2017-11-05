@@ -1,0 +1,195 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  position: relative; /* for scrollspy */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  background-color: transparent !important;
+}
+
+kbd:hover {
+  color:#BFBFBF;
+}
+
+.navbar kbd:active{
+  color: #333;
+}
+
+#top-menu li.active a kbd {
+  color: #bfbfbf;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 3rem;
+  border-radius: 0;
+  background: white;
+}
+
+.navbar-toggle
+{
+    position:relative;
+    float:right;
+    padding:10px;
+    margin:15px;
+    background-color:transparent;
+    border-radius:5px;
+    border:2px solid #333;
+}
+
+.icon-bar{
+  display:block;
+  border-radius:1px;
+  border:1px solid #333;
+}
+
+/* Automatically does: max-width: 100%, height: auto, and display:block */
+.img-responsive { 
+   max-height: 85vh;
+} 
+
+.fa {
+  margin: 7px;
+}
+
+/* Nice spacing */
+.homepage, .projects, .contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Page content */
+.content {
+  padding: 1rem;
+}
+
+
+
+/* On small screens, set height to 'auto' for grid */
+@media screen and (max-width: 767px) {
+  .row.content {height:auto;}
+}
+
+@media (max-width: 400px) {
+  .flex-grid {display: block;}
+  .flex-grid-thirds {display: block;}
+}
+
+/* Grid stuff */
+.flex-grid {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.col {
+  flex: 1;
+  padding: 20px;
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+.flex-grid .col {
+  flex: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Projects */
+.container{
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: space-around;
+}
+.upper{
+  margin:5rem;
+  padding: 2rem;
+}
+.lower{
+  margin:5rem;
+  padding: 2rem;
+}
+
+.proimg {
+  box-shadow: 5px 5px 10px #bfbfbf;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto; 
+}
+
+p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 860px) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #333;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  .ole:hover .overlay {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .text {
+    display: none;
+  }
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.socialmed {
+  padding:20px;
+}
+
+footer {
+  position: relative; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: transparent;
+  text-align: left;
+  margin-top: 5rem;
+}
+
+footer a {
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  padding: 1rem;
+}
